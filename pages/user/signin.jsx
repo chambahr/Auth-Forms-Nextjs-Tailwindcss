@@ -1,26 +1,19 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import React from 'react'
 import Image from 'next/image'
 import { FaFacebookF, FaLinkedin, FaGoogle, FaRegEnvelope} from "react-icons/fa"
 import { MdLockOutline } from "react-icons/md"
+import CompanyName from '../../components/CompanyName'
 
-import Footer from "../components/Footer"
-import CompanyName from "../components/CompanyName"
-
-const Home: NextPage = () => {
+const signin = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Auth login forms with Nextjs and Tailwindcss</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center p-20 text-center">
+<main className="flex w-full flex-1 flex-col items-center justify-center p-20 text-center">
        <div className='bg-white shadoww-2xl rounded-2xl flex w-2/3 max-w-4xl'>
 
          {/* All content here is for the left section */}
           <div className='w-3/5 p-5'>
-           <CompanyName />
+          <CompanyName />
             <div className='py-10'>
               <h2 className='text-green-700 text-3xl font-bold mb-1'>Sign In To Account</h2>
               <div className='border-2 mb-2 w-10 border-green-700 inline-block'></div>
@@ -50,7 +43,7 @@ const Home: NextPage = () => {
                   <label className="flex items-center text-xs">
                     <input type="checkbox" name='remember'  className='m-1'/>Remember me
                   </label>
-                  <a href="#" className='text-xs m-1 hover:underline'>Forgot Password</a>
+                  <a href="/user/forgotpassword" className='text-xs m-1 hover:underline'>Forgot Password</a>
                 </div>
 
                 <a href='#' className='border-2 border-green-700 px-12 py-2 rounded-full inline-block font-semibold hover:bg-green-700 hover:text-white'> Sign In</a>
@@ -76,10 +69,8 @@ const Home: NextPage = () => {
           </div>
        </div>
       </main>
-
-     <Footer />
-    </div>
+    </>
   )
 }
 
-export default Home
+export default signin
