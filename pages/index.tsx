@@ -10,10 +10,7 @@ import CompanyName from "../components/CompanyName"
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
-      <Head>
-        <title>Auth login forms with Nextjs and Tailwindcss</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+     
 
       <main className="flex w-full flex-1 flex-col items-center justify-center p-20 text-center">
        <div className='bg-white shadoww-2xl rounded-2xl flex w-2/3 max-w-4xl'>
