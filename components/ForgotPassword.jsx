@@ -51,7 +51,7 @@ const ForgotPassword = () => {
 
           {/* This section is the right sections */}
           <div className='w-2/5 p-5 bg-green-700 text-white rounded-tr-2xl rounded-br-2xl py-36 px-12'>
-            <h2 className='text-3xl mb-8 font-bold'>Remembered Your Passsword?</h2>
+            <h4 className='text-2xl mb-8 font-bold'>Remembered Your Passsword?</h4>
             <div className='inline-block mb-2 border-2 w-10 text-white'></div>
             <p className='mb-10'></p>
          
