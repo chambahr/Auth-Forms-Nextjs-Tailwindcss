@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { FaFacebookF, FaLinkedin, FaGoogle, FaRegEnvelope} from "react-icons/fa"
 import { MdLockOutline } from "react-icons/md"
+import { useSession, signIn, signOut } from 'next-auth/react'
 
 import Footer from "../components/Footer"
 import CompanyName from "../components/CompanyName"
